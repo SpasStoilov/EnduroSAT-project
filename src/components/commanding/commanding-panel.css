@@ -1,0 +1,54 @@
+.CommandingPanel{
+    transition: height 0.5s ease; /* You can adjust the duration and timing function */
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    align-self: flex-end;
+    align-items: center;
+    z-index: 12;
+    width: 60%;
+    height: 30%;
+    background: linear-gradient(to bottom, cadetblue, rgb(68, 112, 114));
+}
+
+.CommandingPanel.closed {
+    height: 5.5%;
+}
+.CommandingPanel.wide {
+    width: 100%;
+}
+
+.btn-OBC-connect-true, .btn-Camera-connect-true{
+    margin-top: 40px;
+    padding: 30px;
+    border: 0;
+    border-radius: 200px;
+    font-size: 25px;
+}
+
+.btn-OBC-connect-false, .btn-Camera-connect-false{
+    margin-top: 40px;
+    padding: 30px;
+    border: 0;
+    border-radius: 200px;
+    font-size: 25px;
+    color: azure;
+    border: 5px solid aliceblue;
+    background-color: rgb(32, 149, 160);
+}
+
+.commands-title{
+    position: absolute;
+    align-self: flex-start;
+    top: 0;
+    left: 0;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    padding:15px 70px 15px 30px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    border-bottom-right-radius: 60px;
+    border-bottom: 5px solid rgb(0, 23, 22);
+    border-right: 2px solid rgb(0, 23, 22);
+    margin: 0;
+}

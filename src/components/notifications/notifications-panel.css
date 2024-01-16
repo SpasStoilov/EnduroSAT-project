@@ -1,0 +1,44 @@
+.NotificationsPanel{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(138, 138, 138);
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    /* transition: width 0.5s ease; You can adjust the duration and timing function */
+    z-index: 12;
+}
+
+.notifications-title{
+    padding: 5px 0px 18px 20px;
+    color: rgb(255, 239, 209);
+    border-bottom: 3px solid rgb(255, 255, 255);
+    font-size: 25px;
+}
+.msg{
+    margin: 10px;
+    padding: 15px 20px 15px 20px;
+    border: 1px solid burlywood;
+    font-size: 20px;
+    text-align: left;
+    overflow: auto;
+    word-break: break-all;
+    border-radius: 10px;
+    background-color: azure;
+}
+
+.time-msg{
+    margin: 0;
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgb(255, 239, 209);
+    padding: 0px 0px 0px 20px;
+}
+
+.NotificationsPanel.closed {
+    width: 10%;
+    position: absolute;
+    top:0;
+    right: 0%
+}
